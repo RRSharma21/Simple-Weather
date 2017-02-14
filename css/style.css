@@ -1,0 +1,223 @@
+/**
+  List of sources:
+  Resizing textbox on hover: http://www.w3schools.com/css/css_form.asp
+  Responsive design: http://www.w3schools.com/css/css_rwd_mediaqueries.asp
+*/
+@font-face
+{
+  font-family: 'Titillium Web', sans-serif;
+}
+p
+{
+  display: inline;
+}
+body
+{
+ padding:0;
+ margin: 0px;
+}
+
+/* Responsive Design */
+[class*="col-"] {
+    float: left;
+    width: 100%;
+
+}
+
+/* Large Phone */
+@media only screen and (min-width:600px)
+{
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+
+}
+
+/* Tablet */
+@media only screen and (min-width:700px)
+{
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+  li
+  {
+    float: left;
+  }
+}
+/* Desktop */
+@media only screen and (min-width:768px)
+{
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  li
+  {
+    float: left;
+  }
+}
+
+.row::after
+{
+
+    content: "";
+    clear: both;
+    display: table;
+}
+/* End of Responsive Design */
+
+
+/** Styling Search Bar and Buttons begins here */
+.searchBar
+{
+  background-color: rgb(54,59,63);
+  padding: 15px;
+  text-align: center;
+}
+
+.title
+{
+  font-family: 'Titillium Web', sans-serif;
+
+  color: white;
+}
+input[type=text]
+{
+  width: 200px;
+  box-sizing: border-box;
+  color: white;
+  background-color: rgb(44,49,59);
+  padding: 12px 20px 12px 12px;
+  font-size: 15px;
+  /* Transition property, webkit used for Safari browsers
+     ease-in-out property: Makes a transition that has a slow start and end.
+     This transition will extend the width of the search bar.
+  */
+  -webkit-transition: width 0.7s ease-in-out;
+  transition: width 0.7s ease-in-out;
+}
+
+.button
+{
+  background-color: rgb(40, 44, 52);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 14px;
+  box-sizing: border-box;
+
+}
+.button:hover
+{
+  color: rgb(183, 183, 183);
+}
+input[type=text]:focus
+{
+  width: 400px;
+}
+
+/** currentWeather styling */
+.currentW
+{
+  border-collapse: collapse;
+  background-color: rgb(54,59,63);
+  opacity: 0.5;
+  filter: alpha(opacity=60);
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  padding: 16px;
+}
+.wPanel
+{
+
+  height: 700px;
+  background-size: cover;
+}
+#weatherPan
+{
+  width:100%;
+  height: auto;
+  background-attachment: fixed;
+}
+#cName
+{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 32px;
+}
+#cwCond, #cwWind, #cwHum
+{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 22px;
+}
+#cwTemp
+{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 42px;
+}
+/** End of current weather styling*/
+
+/** Beggining of three hour forecast styling */
+.heading
+{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 42px;
+  color: white;
+  background-color: rgba(54,59,63, .5);
+  margin-left: 75px;
+  margin-right: 75px;
+
+}
+
+/** End of 3 hour forecast styling */
+
+/** Beggining of table styling */
+.clearTab
+{
+  padding-left: 30px;
+  text-align: center;
+}
+table
+{
+  margin: auto;
+  border-collapse: collapse;
+  background-color: rgba(54,59,63, .5);
+
+
+  filter: alpha(opacity=60);
+  padding: 10px;
+}
+th, td
+{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: white;
+}
+
+/** End of table styling */

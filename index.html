@@ -1,0 +1,56 @@
+<script type='text/javascript' src='config.js'></script>
+
+<!-- List of sources used:
+      Preventing enter key from loading JS code: http://stackoverflow.com/questions/2802887/preventing-form-submission-when-enter-is-pressed
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="myScript.js"></script>
+    <script type='text/javascript' src='config.js'></script>
+  </head>
+
+  <body onload="updateCity('Toronto')">
+    <div class="searchBar">
+      <h1 class="title"> Simple Weather <h1>
+      <form action="myScript.js" method="get" onkeypress="return event.keyCode != 13">
+
+        <input type="text" name="cityName" placeholder="Enter the city name.." >
+        <button type="button" class="button" onclick="updateCity(cityName.value)"> Search </button>
+      </form>
+      <button type="button" class="button" onclick="changeConversion('metric')"> Celsius </button>
+      <button type="button" class="button" onclick="changeConversion('imperial')"> Fahrenheit </button>
+
+    </div>
+    <div class="wPanel" id="weatherPan">
+      <div class="currentW">
+        <h1 id="country"> </h1>
+        <p id="cName"> </p> <br>
+        <p id="cwCond"> </p> <br>
+        <p id="cwWind"> </p>
+        <p id="cwHum"> </p> <br>
+        <p id="cwTemp"> </p>
+      </div>
+      <div class="row">
+        <div class="col-6 col-m-12">
+          <div class="clearTab">
+           <h1 class="heading"> Hourly Forecast </h1>
+            <p id="hrWtble"> </p>
+          </div>
+        </div>
+        <div class="col-6 col-m-12">
+          <div class="clearTab">
+            <h1 class="heading"> Weekly Forecast </h1>
+            <p id="weekTble"> </p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  </body>
+
+</html>
