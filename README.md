@@ -1,4 +1,5 @@
 # Simple-Weather
+Live Demo to fully functioning web app: http://scs.ryerson.ca/~rrsharma/cps630/lab2/index.html
 Note to use this weather app you must first create a free account on openweathermap so you can be issued an API key. 
 • This can be done here: http://openweathermap.org
   After receiving an api key, change the var mykey = config.MY_KEY to 
