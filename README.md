@@ -15,5 +15,5 @@ The following Weather Information must be present:
 • Current temp, and weather conditions (cloudy, snow, rain.. etc. ), wind and humidity.   
 • Forecast of minimum 5days.  
 • Hourly( per 3hr) weather information ( freedom implement data display ie: graph or traditional information display.   
-  Use only JavaScript AJAX (no external frameworks such as jquery and others) call to server to get and manipulate information.   
-  Update information must be done asynchronously: location change or temperature F to C or C to F.  
+• Use only JavaScript AJAX (no external frameworks such as jquery and others) call to server to get and manipulat information.       
+• Update information must be done asynchronously: location change or temperature F to C or C to F.  
