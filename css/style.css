@@ -113,7 +113,7 @@ input[type=text]
   box-sizing: border-box;
   color: white;
   background-color: rgb(44,49,59);
-  padding: 12px 20px 12px 12px;
+  padding: 12px 12px 12px 12px;
   font-size: 15px;
   /* Transition property, webkit used for Safari browsers
      ease-in-out property: Makes a transition that has a slow start and end.
